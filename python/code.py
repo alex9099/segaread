@@ -1,8 +1,10 @@
 from pymouse import PyMouse
 from pykeyboard import PyKeyboard
 import serial
+import sys
 k = PyKeyboard();
-ser = serial.Serial('/dev/ttyUSB2', 115200, timeout=1)
+port =  raw_input("Please enter the serial port (Ex: Linux: /dev/ttyUSB0; Windows: COM1): ")
+ser = serial.Serial(port, 115200, timeout=1)
 items = []
 
 while True:

@@ -15,6 +15,7 @@ DB9 pin8 -> GND
 DB9 pin9 -> D8
 
 You can see the controller pinout here: http://www.haku.co.uk/pics/SegaJoypadPinout.jpg
+
 --- Português ---
 
 Este codigo deve ser enviado para o arduino

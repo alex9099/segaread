@@ -6,12 +6,12 @@ This code is intended for you to use a Sega MegaDrive or Sega Genesis on the com
 
 Known Issues:
 - You can only click one key each "keypress", like you press Start + A, you cant press A again unless you release all keys
-
+- Not entering a valid port gives a error
 TODO: 
 - Write the code in other client languages and platforms
 
 
-License: GPLv2
+1License: GPLv2
 
 Fell free to fork and contribute to this project :)
 
@@ -21,7 +21,7 @@ Este codigo tem como objetivo usar um controlador de sega megadrive ou sega gene
 
 Bugs conhecidos:
 - Apenas é possivel carregar em um botão cada vez ou seja se carregar em start +a apenas pode carregar no A uma vez até que liberte todos os botões
-
+- Não dando uma porta valida o programa termina com uma exceção
 TODO:
 - Escrever o cliente em outras linguagens e outras plataformas
 
