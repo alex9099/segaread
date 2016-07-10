@@ -39,46 +39,55 @@ void loop() {
   digitalWrite(select, HIGH);
 
 if (digitalRead(up) == LOW){
+  //0
   used = 1;
  Serial.print("UP\n");
-  delay(50);
+  delay(20);
 
 
 }
 if (digitalRead(down) == LOW){
     used = 1;
+  //1
 
  Serial.print("DOWN\n");
-  delay(50);
+  delay(20);
 
  
 }
 if (digitalRead(left) == LOW){
-    used = 1;
+     //2
 
+  used = 1;
  Serial.print("LEFT\n");
-  delay(50);
-
-
+  delay(20);
 }
+
+
 if (digitalRead(right) == LOW){
+  //3
+
   used = 1;
  Serial.print("RIGHT\n"); 
-  delay(50);
+  delay(20);
 
 
 }
 if (digitalRead(startc) == LOW){
+    //4
+
   used = 1;
  Serial.print("C\n");
-  delay(50);
+  delay(20);
 
 
 }
 if (digitalRead(ab) == LOW){
+    //5
+
   used = 1;
  Serial.print("B\n");
-  delay(50);
+  delay(20);
 
 
 }
@@ -86,31 +95,30 @@ if (digitalRead(ab) == LOW){
 digitalWrite(select, LOW);
 
 if (digitalRead(startc) == LOW){
+    //6
+
   used = 1;
  Serial.print("START\n"); 
-  delay(50);
+  delay(20);
 
 
 }
 if(digitalRead(ab) == LOW){
-  used = 1;
+    //7
+    used = 1;
  Serial.print("A\n");
-  delay(50);
 
-
+ delay(20);
 }
+//if (used = 1){
+//   Serial.print("DO\n");
+//}
 
-if (used = 1){
-   Serial.print("DO\n");
-
-  
-}
-if (used = 0 ){
+if (used == 0 ){
  Serial.print("STOP\n");
 }
 
-
-  delay(50);        // delay in between reads for stability
+  delay(10);        // delay in between reads for stability
 }
 
 
